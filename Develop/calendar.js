@@ -1,6 +1,6 @@
 var date = moment().format('LL');   // get today
-var agenda;        // agenda is an object.  keys are times of day, values are agenda items
-var agendaJSON;         // Object "agenda" as a JSON
+var agenda;        // agenda is an object.  keys are times of day, values are agenda item
+var agendaJSON;         // Object "agenda" in JSON form
 var agendaItems;  // array of agenda items [[9, "arrive"], [10,"email"]...]
 var time;         //  what time slot working on
 var agendaItem;           // agenda item (text) for this time slot
@@ -36,13 +36,14 @@ for (const key of keys) {                    // get array of [time, agendaitem] 
     $("#agenda" + time).attr("placeholder", agendaItem);   // change the text in the textarea (the placeholder)
 };
 
+$(".saveAgendaItem").click(function (event) {
+    event.preventDefault();
+    time = $(this).val();     // time slot to change the agenda item for
+    agendaItem = $("textarea#agenda" + time).val();     // get agenda item text entered
+    agenda[time] = agendaItem;   // put new agenda item in calendar to be saved to local Storage
 
-
-
-
-// clear what was in localStorage, and store new information
-localStorage.clear();
-
-// Store agenda in localStorage
-agendaJSON = JSON.stringify(agenda);
-localStorage.setItem("agenda", agendaJSON);
+    // replace localStorage with new data
+    localStorage.clear();
+    agendaJSON = JSON.stringify(agenda);
+    localStorage.setItem("agenda", agendaJSON);
+});   // end of clicked on save button

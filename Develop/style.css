@@ -2,23 +2,29 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background: rgb(223, 191, 233) !important;  /* light purple background */
+  /* background-image: image("../Assets/Images/security_calendar_140044204.jpg");   /* https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiPpoLws7PlAhXBl-AKHUzyAvwQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.wired.com%2Fstory%2Fgoogle-calendar-phishing-comcast-eye-control-remote%2F&psig=AOvVaw3rhN9N38xhBwXByaxF6OgQ&ust=1571955274582993  */
 }
 
 textarea{
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: purple;
+  border-left: 1px solid purple;
   padding: 10px;
+}
+
+header {
+  height: 300px;   /*  less white space at the top */
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: purple;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid purple;
 }
 
 .description{
@@ -38,8 +44,8 @@ textarea{
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: purple;
+  border-top: 1px dashed purple;
 }
 
 .past {
@@ -58,7 +64,7 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid purple;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
