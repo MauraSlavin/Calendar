@@ -26,10 +26,10 @@
     <table class="table">
       <!-- Table headers of "Time of Day", "What's Up?", and "Save?" -->
       <thead>
-        <tr>
-          <th>Time of Day</th>
-          <th>What's Up?</th>
-          <th>Save?</th>
+        <tr class="d-flex">
+          <th class="col-2">Time of Day</th>
+          <th class="col-8">What's Up?</th>
+          <th class="col-2 save">Save?</th>
         </tr>
       </thead>
 
@@ -41,101 +41,101 @@
       <!-- value on the button lets us determine which button was clicked, so we know which row to save -->
       <!-- use military time in id name and value to make shading of past, present and future times easier mathmatically -->
       <tbody>
-        <tr>
+        <tr class="d-flex">
           <!-- 9am -->
-          <th>9 am</th>
-          <td>
+          <th class="col-2">9 am</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda9" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="9">Save</button>
           </td>
         </tr>
 
-        <tr>
+        <tr class="d-flex">
           <!-- 10am -->
-          <th>10 am</th>
-          <td>
+          <th class="col-2">10 am</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda10" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="10">Save</button>
           </td>
         </tr>
 
-        <tr>
+        <tr class="d-flex">
           <!-- 11am -->
-          <th>11 am</th>
-          <td>
+          <th class="col-2">11 am</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda11" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="11">Save</button>
           </td>
         </tr>
 
-        <tr>
+        <tr class="d-flex">
           <!-- 12pm -->
-          <th>12 pm</th>
-          <td>
+          <th class="col-2">12 pm</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda12" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="12">Save</button>
           </td>
         </tr>
 
-        <tr>
+        <tr class="d-flex">
           <!-- 1pm  (1300 in military time) -->
-          <th>1 pm</th>
-          <td>
+          <th class="col-2">1 pm</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda13" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="13">Save</button>
           </td>
         </tr>
 
-        <tr>
+        <tr class="d-flex">
           <!-- 2pm  (1400 in military time) -->
-          <th>2 pm</th>
-          <td>
+          <th class="col-2">2 pm</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda14" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="14">Save</button>
           </td>
         </tr>
 
-        <tr>
+        <tr class="d-flex">
           <!-- 3pm  (1500 in military time) -->
-          <th>3 pm</th>
-          <td>
+          <th class="col-2">3 pm</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda15" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="15">Save</button>
           </td>
         </tr>
 
-        <tr>
+        <tr class="d-flex">
           <!-- 4pm  (1600 in military time) -->
-          <th>4 pm</th>
-          <td>
+          <th class="col-2">4 pm</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda16" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="16">Save</button>
           </td>
         </tr>
 
-        <tr>
+        <tr class="d-flex">
           <!-- 5pm  (1700 in military time) -->
-          <th>5 pm</th>
-          <td>
+          <th class="col-2">5 pm</th>
+          <td class="col-8">
             <textarea class="form-control rounded-0" id="agenda17" rows="1"></textarea>
           </td>
-          <td>
+          <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="17">Save</button>
           </td>
         </tr>
