@@ -3,7 +3,6 @@ body {
   font-size: 16px;
   line-height: 1;
   background: rgb(223, 191, 233) !important;  /* light purple background */
-  /* background-image: image("../Assets/Images/security_calendar_140044204.jpg");   /* https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiPpoLws7PlAhXBl-AKHUzyAvwQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.wired.com%2Fstory%2Fgoogle-calendar-phishing-comcast-eye-control-remote%2F&psig=AOvVaw3rhN9N38xhBwXByaxF6OgQ&ust=1571955274582993  */
 }
 
 textarea{
@@ -16,7 +15,7 @@ textarea{
 }
 
 header {
-  height: 300px;   /*  less white space at the top */
+  height: 315px;   /*  less white space at the top */
 }
 
 .jumbotron {
@@ -27,67 +26,22 @@ header {
   border-bottom: 10px solid purple;
 }
 
-.description{
-  white-space: pre-wrap;
-}
-
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: purple;
-  border-top: 1px dashed purple;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
-.saveBtn {
-  border-left: 1px solid purple;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
-}
-
 .save {
   text-align: center;
 }
 
 .past {
   background-color: lightblue;
-}
+ }
 
 .current {
   background-color: lightyellow;
-}
+ }
 
 .future {
   background-color: pink;
+ }
+
+.notSaved {
+  color: red !important;
 }

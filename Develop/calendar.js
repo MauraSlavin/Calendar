@@ -56,15 +56,24 @@ for (const key of keys) {                    // get array of [time, agendaitem] 
 
 };
 
-
+// save item to localstorage; take highlighting that it has not been saved off
 $(".saveAgendaItem").click(function (event) {
     event.preventDefault();
     time = $(this).val();     // time slot to change the agenda item for
     agendaItem = $("textarea#agenda" + time).val();     // get agenda item text entered
     agenda[time] = agendaItem;   // put new agenda item in calendar to be saved to local Storage
-
+    
+    // $(this).siblings().removeClass("notSaved");  // no longer highlighted as not saved.
+    $(this).parent().parent().find("textarea").removeClass("notSaved");
+    $(this).parent().parent().find("textarea").attr("color","black");  // make sure color is black, too (was going to white)
     // replace localStorage with new data
     localStorage.clear();
     agendaJSON = JSON.stringify(agenda);
     localStorage.setItem("agenda", agendaJSON);
 });   // end of clicked on save button
+
+// highlight text as not being saved, yet.
+$("textarea").click(function(event) {
+    event.preventDefault();
+    $(this).addClass("notSaved");   // highlight text as not having been saved
+});

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" /> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <title>Work Day Agenda</title>
@@ -18,7 +18,7 @@
   <header class="jumbotron" bg-color->
     <h1 class="display-3">Work Day Agenda</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead"></p>
+    <p class="lead" id = "currentDay"></p>
   </header>
 
   <div class="container">
@@ -45,7 +45,7 @@
           <!-- 9am -->
           <th class="col-2">9 am</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda9" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda9" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="9">Save</button>
@@ -56,7 +56,7 @@
           <!-- 10am -->
           <th class="col-2">10 am</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda10" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda10" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="10">Save</button>
@@ -67,7 +67,7 @@
           <!-- 11am -->
           <th class="col-2">11 am</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda11" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda11" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="11">Save</button>
@@ -78,7 +78,7 @@
           <!-- 12pm -->
           <th class="col-2">12 pm</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda12" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda12" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="12">Save</button>
@@ -89,7 +89,7 @@
           <!-- 1pm  (1300 in military time) -->
           <th class="col-2">1 pm</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda13" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda13" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="13">Save</button>
@@ -100,7 +100,7 @@
           <!-- 2pm  (1400 in military time) -->
           <th class="col-2">2 pm</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda14" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda14" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="14">Save</button>
@@ -111,7 +111,7 @@
           <!-- 3pm  (1500 in military time) -->
           <th class="col-2">3 pm</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda15" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda15" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="15">Save</button>
@@ -122,7 +122,7 @@
           <!-- 4pm  (1600 in military time) -->
           <th class="col-2">4 pm</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda16" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda16" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="16">Save</button>
@@ -133,7 +133,7 @@
           <!-- 5pm  (1700 in military time) -->
           <th class="col-2">5 pm</th>
           <td class="col-8">
-            <textarea class="form-control rounded-0" id="agenda17" rows="1"></textarea>
+            <textarea class="form-control rounded-0 text-dark border border-dark" id="agenda17" rows="1"></textarea>
           </td>
           <td class="col-2 save">
             <button type="button" class="btn btn-secondary rounded-circle saveAgendaItem" value="17">Save</button>
@@ -143,9 +143,10 @@
       </tbody>
     </table>
 
-    <p> Rows highlighted in <span class="past">blue/green</span> are in the past; <span class="current"> yellow </span>
+    <p class = "text-dark"> Rows highlighted in <span class="past">blue/green</span> are in the past; <span class="current"> yellow </span>
       are now; and <span class = "future">pink/orange</span> are in the future.</p>
-    <!-- <p> <span class="notSaved">Red </span> text indicates the item has NOT been saved.</p> -->
+    <p class = "text-dark"> <span class="notSaved">Red </span> text indicates the item has NOT been saved.</p>
+    <p>Darker text means that item has been changed and saved this session.</p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
